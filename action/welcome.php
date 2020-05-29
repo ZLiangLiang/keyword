@@ -5,16 +5,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-<link rel="stylesheet" type="text/css" href="static/h-ui/css/H-ui.min.css" />
-<link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/H-ui.admin.css" />
-<link rel="stylesheet" type="text/css" href="lib/Hui-iconfont/1.0.8/iconfont.css" />
-<link rel="stylesheet" type="text/css" href="static/h-ui.admin/skin/default/skin.css" id="skin" />
-<link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/style.css" />
+<link rel="stylesheet" type="text/css" href="../static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="../static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="../lib/Hui-iconfont/1.0.8/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="../static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="../static/h-ui.admin/css/style.css" />
 <script>
 	function doDel(id) {
             if (confirm("确定要删除么？")) {
                 window.location = 'action.php?action=del&id=' + id;
-            }
+            } 
         }
 </script>
 <title>关键字列表</title>
@@ -63,25 +63,7 @@
             echo "</tr>";
         }
 
-        //jieba
-		ini_set('memory_limit', '600M');
-		 
 
-		require_once "/jieba-php-master/src/vendor/multi-array/MultiArray.php";
-		require_once "/jieba-php-master/src/vendor/multi-array/Factory/MultiArrayFactory.php";
-		require_once "/jieba-php-master/src/class/Jieba.php";
-		require_once "/jieba-php-master/src/class/Finalseg.php";
-		use Fukuball\Jieba\Jieba;
-		use Fukuball\Jieba\Finalseg;
-		Jieba::init();
-		Finalseg::init();
-		$content="今天星期几";
-		$tags = Jieba::cut($content);
-		$len=sizeof($tags);
-		for ($i=0; $i <$len ; $i++) { 
-			echo "$tags[$i]\n\n";
-		}
-		echo "$content";
 		
         ?>
 		</tbody>
@@ -94,8 +76,8 @@
 		<p></p>
 	</div>
 </footer>
-<script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script> 
-<script type="text/javascript" src="static/h-ui/js/H-ui.min.js"></script> 
+<script type="text/javascript" src="../lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="../static/h-ui/js/H-ui.min.js"></script> 
 
 
 </body>

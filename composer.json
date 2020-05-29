@@ -1,6 +1,5 @@
 {
     "require": {
-        "monolog/monolog": "1.2.*",
         "fukuball/jieba-php": "dev-master"
     }
 }

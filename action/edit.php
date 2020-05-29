@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="stylesheet" type="text/css" href="static/h-ui/css/H-ui.min.css" />
-    <link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/H-ui.admin.css" />
-    <link rel="stylesheet" type="text/css" href="lib/Hui-iconfont/1.0.8/iconfont.css" />
-    <link rel="stylesheet" type="text/css" href="static/h-ui.admin/skin/default/skin.css" id="skin" />
-    <link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../static/h-ui/css/H-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../static/h-ui.admin/css/H-ui.admin.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/Hui-iconfont/1.0.8/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="../static/h-ui.admin/skin/default/skin.css" id="skin" />
+    <link rel="stylesheet" type="text/css" href="../static/h-ui.admin/css/style.css" />
     <title>修改</title>
 
 </head>
@@ -58,35 +58,7 @@
                 </tr>
             </tbody>
         </table>
-        <!-- <div class="editt">
-            <table class="edit"> 
-                <div class="text-b">
-                    <tr>
-                        <td class="pp">关键字</td>
-                        <td><input  name="keyword" type="text" value="<?php echo $key[1]?>"/></td>
-                    </tr>
-                <br/>
-                </div>
-                <div class="text-b">
-                    <tr>
-                        <td class="pp">响应</td>
-        				<td><input type="text" name="response" value="<?php echo $key[2]?>" /></td>
-                    </tr>
-                </div>
-                <div class="text-b">
-                    <tr>
-                        <td class="pp">链接</td>
-                        <td><input type="text" name="url" value="<?php echo $key[3]?>" /></td>
-                    </tr>  
-                </div>          
-                <tr>
-                    <td> </td>
-                    <td><input type="submit" value="修改"/>  
-                        <input type="reset" value="重置"/>
-                    </td>
-                </tr>
-            </table>
-        </div> -->
+
 
     </form>
 
